@@ -1,0 +1,453 @@
+-- Bulk update for all students with correct Week 4 data from CSV
+-- Using CASE statements for efficient updates
+
+UPDATE weekly_progress_data 
+SET 
+  week1_score = CASE 
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'aadi2532') THEN 27
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Abhishek_2008') THEN 11
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Aadi_Singh_28') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ajit_Yadav_2908') THEN 6
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Akanksha_kushwaha_a') THEN 22
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'alok-work23') THEN 3
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'aman1640') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'amanadarsh1168') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Amit_Kumar13') THEN 3
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'tanamika') THEN 4
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'of0DUuvBjV') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Anoop_kumar123') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'CodebyAnshu03') THEN 4
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'anuradha_24') THEN 52
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Anushri_Mishra') THEN 49
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'aradhya789') THEN 8
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'arjunkadampatil') THEN 22
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Uny60jPJeO') THEN 42
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Arun_404') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'aryan8773') THEN 15
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'ashwin-tech') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ayush4Sony') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ayush_Yadav_029') THEN 9
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Bhagwati323') THEN 5
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'bhaskarmahato03') THEN 1
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Mr_bpk_4433') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'TrivedhChalla') THEN 27
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'WelcomeGseries') THEN 12
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Chiranjeet_Biswas') THEN 4
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'debangsumisra') THEN 18
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'AlgoMandal') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Dilip_Vaishnav_07') THEN 4
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Dilip0552') THEN 5
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Disha-01-alt') THEN 30
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'ADHIINSVY13') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Divyanshirathour') THEN 15
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'EktaSaw1212') THEN 20
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Gaurav_rathore96') THEN 25
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'gaurav_vvv') THEN 12
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'gauravtiwari_70') THEN 5
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Guman_singh_rajpoot') THEN 8
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'HarisinghRaj') THEN 5
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'harshchourasiya295') THEN 1
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'thisharshit') THEN 2
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'ansraaz86') THEN 1
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'himanshu_chundawat') THEN 16
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'hirak__') THEN 12
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'hiranya_patil') THEN 7
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ishant_57') THEN 38
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'jagriti_Pandey01') THEN 1
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'kKJ7y7Q9Ks') THEN 19
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Janu_Chaudhary') THEN 41
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'krtechie') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'khushi_narwariya') THEN 18
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Lakhan_rathore') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Maneesh_Sakhwar') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'MANIKUMAR7109') THEN 9
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Chhaba_Manish') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'manojk909') THEN 9
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Manoj_Dewda022') THEN 1
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Mausam-kumari') THEN 23
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'mayankRajRay') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'alamehtab') THEN 9
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Afzl_Raza') THEN 4
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'codemon-07') THEN 15
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'sharma_Mohit_2005') THEN 13
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'JoelMoirangthem') THEN 1
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Monurajpoot') THEN 1
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Arunkumar087') THEN 4
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Neeru888') THEN 30
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Nid_Singh') THEN 105
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Rdxnikhil') THEN 6
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Nikhil_KM_04') THEN 9
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'r2GUlBuyLZ') THEN 18
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'nirmal_M01') THEN 2
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'om_codes1') THEN 2
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'pawankushwah') THEN 12
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'ranapink398') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'pooransingh01') THEN 8
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Prabhat7987') THEN 29
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'prachiDhakad') THEN 51
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Chauhan_Pragati') THEN 31
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Pranjal428') THEN 10
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'prem2450') THEN 6
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'PCodex9') THEN 2
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'preranarajnag') THEN 1
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Priya_saini2004') THEN 30
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'iPriyadarshi') THEN 78
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Pushpraj_DSA') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'rahu48') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'RahulVermaji') THEN 7
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'kn1gh7t') THEN 7
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'rajiv1478') THEN 10
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'RakshitaKBiradar') THEN 3
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ramrajnagar') THEN 37
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'DL6FbStsPL') THEN 3
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'MouryaRavi') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'RAVI-RAJPUT-UMATH') THEN 1
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'RITESH12JHA24') THEN 1
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ritik_Singh_2311') THEN 61
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'RohitMelasiya') THEN 7
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'rkprasad90600') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Sajan_kumar45') THEN 5
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Samina_Sultana') THEN 57
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'sandeepsinu79') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Sandhya_Kaushal') THEN 11
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Sandhya_Parmar') THEN 80
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'sarthak-26') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'kr_satish') THEN 8
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'bocchi_277') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'shahidthisside') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Shalini_Priya29') THEN 5
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'shilpishaw') THEN 52
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'itz_shuklajii') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'shivamm-shukla') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Shivangdubey9') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'shlokg62') THEN 69
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'shreyank_s') THEN 84
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Shubham_Kang') THEN 6
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Sneha6289') THEN 22
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'sunny_kumar_1') THEN 38
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Surveer686') THEN 22
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'yadavsuyash723') THEN 83
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ujjwal_Baijal') THEN 4
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'sai_maithri') THEN 11
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Vinay_Prajapati') THEN 2
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Tamnnaparvreen') THEN 8
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'vinay_gupta01') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'vishalbhardwaj123') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'kumar_vishal_01') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'its_vivek_001') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'vivek_75') THEN 3
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'yuvrajsinghbhati01') THEN 15
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'namandamami') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ajayjatav') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Kuldeep_Saraswat') THEN 0
+    ELSE week1_score
+  END,
+  week4_score = CASE 
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'aadi2532') THEN 39
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Abhishek_2008') THEN 64
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Aadi_Singh_28') THEN 58
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ajit_Yadav_2908') THEN 62
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Akanksha_kushwaha_a') THEN 72
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'alok-work23') THEN 53
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'aman1640') THEN 15
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'amanadarsh1168') THEN 52
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Amit_Kumar13') THEN 54
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'tanamika') THEN 42
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'of0DUuvBjV') THEN 12
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Anoop_kumar123') THEN 53
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'CodebyAnshu03') THEN 40
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'anuradha_24') THEN 122
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Anushri_Mishra') THEN 90
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'aradhya789') THEN 50
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'arjunkadampatil') THEN 112
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Uny60jPJeO') THEN 91
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Arun_404') THEN 41
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'aryan8773') THEN 120
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'ashwin-tech') THEN 49
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ayush4Sony') THEN 41
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ayush_Yadav_029') THEN 54
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Bhagwati323') THEN 98
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'bhaskarmahato03') THEN 52
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Mr_bpk_4433') THEN 44
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'TrivedhChalla') THEN 87
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'WelcomeGseries') THEN 47
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Chiranjeet_Biswas') THEN 60
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'debangsumisra') THEN 65
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'AlgoMandal') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Dilip_Vaishnav_07') THEN 56
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Dilip0552') THEN 49
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Disha-01-alt') THEN 94
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'ADHIINSVY13') THEN 54
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Divyanshirathour') THEN 62
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'EktaSaw1212') THEN 63
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Gaurav_rathore96') THEN 87
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'gaurav_vvv') THEN 51
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'gauravtiwari_70') THEN 33
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Guman_singh_rajpoot') THEN 97
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'HarisinghRaj') THEN 98
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'harshchourasiya295') THEN 120
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'thisharshit') THEN 65
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'ansraaz86') THEN 55
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'himanshu_chundawat') THEN 67
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'hirak__') THEN 78
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'hiranya_patil') THEN 75
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ishant_57') THEN 143
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'jagriti_Pandey01') THEN 22
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'kKJ7y7Q9Ks') THEN 60
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Janu_Chaudhary') THEN 124
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'krtechie') THEN 77
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'khushi_narwariya') THEN 79
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Lakhan_rathore') THEN 41
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Maneesh_Sakhwar') THEN 21
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'MANIKUMAR7109') THEN 57
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Chhaba_Manish') THEN 36
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'manojk909') THEN 78
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Manoj_Dewda022') THEN 67
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Mausam-kumari') THEN 103
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'mayankRajRay') THEN 54
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'alamehtab') THEN 63
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Afzl_Raza') THEN 37
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'codemon-07') THEN 50
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'sharma_Mohit_2005') THEN 57
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'JoelMoirangthem') THEN 68
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Monurajpoot') THEN 78
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Arunkumar087') THEN 53
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Neeru888') THEN 70
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Nid_Singh') THEN 153
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Rdxnikhil') THEN 37
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Nikhil_KM_04') THEN 93
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'r2GUlBuyLZ') THEN 46
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'nirmal_M01') THEN 39
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'om_codes1') THEN 45
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'pawankushwah') THEN 84
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'ranapink398') THEN 48
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'pooransingh01') THEN 55
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Prabhat7987') THEN 73
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'prachiDhakad') THEN 129
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Chauhan_Pragati') THEN 116
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Pranjal428') THEN 53
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'prem2450') THEN 59
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'PCodex9') THEN 57
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'preranarajnag') THEN 51
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Priya_saini2004') THEN 118
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'iPriyadarshi') THEN 142
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Pushpraj_DSA') THEN 57
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'rahu48') THEN 59
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'RahulVermaji') THEN 43
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'kn1gh7t') THEN 62
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'rajiv1478') THEN 61
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'RakshitaKBiradar') THEN 74
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ramrajnagar') THEN 109
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'DL6FbStsPL') THEN 40
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'MouryaRavi') THEN 46
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'RAVI-RAJPUT-UMATH') THEN 62
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'RITESH12JHA24') THEN 41
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ritik_Singh_2311') THEN 125
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'RohitMelasiya') THEN 59
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'rkprasad90600') THEN 52
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Sajan_kumar45') THEN 5
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Samina_Sultana') THEN 130
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'sandeepsinu79') THEN 45
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Sandhya_Kaushal') THEN 64
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Sandhya_Parmar') THEN 112
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'sarthak-26') THEN 64
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'kr_satish') THEN 68
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'bocchi_277') THEN 60
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'shahidthisside') THEN 54
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Shalini_Priya29') THEN 62
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'shilpishaw') THEN 136
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'itz_shuklajii') THEN 50
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'shivamm-shukla') THEN 52
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Shivangdubey9') THEN 67
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'shlokg62') THEN 124
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'shreyank_s') THEN 129
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Shubham_Kang') THEN 58
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Sneha6289') THEN 70
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'sunny_kumar_1') THEN 94
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Surveer686') THEN 106
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'yadavsuyash723') THEN 123
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ujjwal_Baijal') THEN 49
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'sai_maithri') THEN 72
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Vinay_Prajapati') THEN 69
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Tamnnaparvreen') THEN 55
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'vinay_gupta01') THEN 37
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'vishalbhardwaj123') THEN 35
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'kumar_vishal_01') THEN 43
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'its_vivek_001') THEN 20
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'vivek_75') THEN 46
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'yuvrajsinghbhati01') THEN 66
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'namandamami') THEN 51
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ajayjatav') THEN 73
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Kuldeep_Saraswat') THEN 23
+    ELSE week4_score
+  END,
+  total_score = CASE 
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'aadi2532') THEN 39
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Abhishek_2008') THEN 64
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Aadi_Singh_28') THEN 58
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ajit_Yadav_2908') THEN 62
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Akanksha_kushwaha_a') THEN 72
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'alok-work23') THEN 53
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'aman1640') THEN 15
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'amanadarsh1168') THEN 52
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Amit_Kumar13') THEN 54
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'tanamika') THEN 42
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'of0DUuvBjV') THEN 12
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Anoop_kumar123') THEN 53
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'CodebyAnshu03') THEN 40
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'anuradha_24') THEN 122
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Anushri_Mishra') THEN 90
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'aradhya789') THEN 50
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'arjunkadampatil') THEN 112
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Uny60jPJeO') THEN 91
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Arun_404') THEN 41
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'aryan8773') THEN 120
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'ashwin-tech') THEN 49
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ayush4Sony') THEN 41
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ayush_Yadav_029') THEN 54
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Bhagwati323') THEN 98
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'bhaskarmahato03') THEN 52
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Mr_bpk_4433') THEN 44
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'TrivedhChalla') THEN 87
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'WelcomeGseries') THEN 47
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Chiranjeet_Biswas') THEN 60
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'debangsumisra') THEN 65
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'AlgoMandal') THEN 0
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Dilip_Vaishnav_07') THEN 56
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Dilip0552') THEN 49
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Disha-01-alt') THEN 94
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'ADHIINSVY13') THEN 54
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Divyanshirathour') THEN 62
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'EktaSaw1212') THEN 63
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Gaurav_rathore96') THEN 87
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'gaurav_vvv') THEN 51
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'gauravtiwari_70') THEN 33
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Guman_singh_rajpoot') THEN 97
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'HarisinghRaj') THEN 98
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'harshchourasiya295') THEN 120
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'thisharshit') THEN 65
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'ansraaz86') THEN 55
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'himanshu_chundawat') THEN 67
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'hirak__') THEN 78
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'hiranya_patil') THEN 75
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ishant_57') THEN 143
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'jagriti_Pandey01') THEN 22
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'kKJ7y7Q9Ks') THEN 60
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Janu_Chaudhary') THEN 124
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'krtechie') THEN 77
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'khushi_narwariya') THEN 79
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Lakhan_rathore') THEN 41
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Maneesh_Sakhwar') THEN 21
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'MANIKUMAR7109') THEN 57
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Chhaba_Manish') THEN 36
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'manojk909') THEN 78
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Manoj_Dewda022') THEN 67
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Mausam-kumari') THEN 103
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'mayankRajRay') THEN 54
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'alamehtab') THEN 63
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Afzl_Raza') THEN 37
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'codemon-07') THEN 50
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'sharma_Mohit_2005') THEN 57
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'JoelMoirangthem') THEN 68
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Monurajpoot') THEN 78
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Arunkumar087') THEN 53
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Neeru888') THEN 70
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Nid_Singh') THEN 153
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Rdxnikhil') THEN 37
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Nikhil_KM_04') THEN 93
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'r2GUlBuyLZ') THEN 46
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'nirmal_M01') THEN 39
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'om_codes1') THEN 45
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'pawankushwah') THEN 84
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'ranapink398') THEN 48
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'pooransingh01') THEN 55
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Prabhat7987') THEN 73
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'prachiDhakad') THEN 129
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Chauhan_Pragati') THEN 116
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Pranjal428') THEN 53
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'prem2450') THEN 59
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'PCodex9') THEN 57
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'preranarajnag') THEN 51
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Priya_saini2004') THEN 118
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'iPriyadarshi') THEN 142
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Pushpraj_DSA') THEN 57
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'rahu48') THEN 59
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'RahulVermaji') THEN 43
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'kn1gh7t') THEN 62
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'rajiv1478') THEN 61
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'RakshitaKBiradar') THEN 74
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ramrajnagar') THEN 109
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'DL6FbStsPL') THEN 40
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'MouryaRavi') THEN 46
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'RAVI-RAJPUT-UMATH') THEN 62
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'RITESH12JHA24') THEN 41
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ritik_Singh_2311') THEN 125
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'RohitMelasiya') THEN 59
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'rkprasad90600') THEN 52
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Sajan_kumar45') THEN 5
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Samina_Sultana') THEN 130
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'sandeepsinu79') THEN 45
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Sandhya_Kaushal') THEN 64
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Sandhya_Parmar') THEN 112
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'sarthak-26') THEN 64
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'kr_satish') THEN 68
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'bocchi_277') THEN 60
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'shahidthisside') THEN 54
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Shalini_Priya29') THEN 62
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'shilpishaw') THEN 136
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'itz_shuklajii') THEN 50
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'shivamm-shukla') THEN 52
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Shivangdubey9') THEN 67
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'shlokg62') THEN 124
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'shreyank_s') THEN 129
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Shubham_Kang') THEN 58
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Sneha6289') THEN 70
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'sunny_kumar_1') THEN 94
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Surveer686') THEN 106
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'yadavsuyash723') THEN 123
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ujjwal_Baijal') THEN 49
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'sai_maithri') THEN 72
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Vinay_Prajapati') THEN 69
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Tamnnaparvreen') THEN 55
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'vinay_gupta01') THEN 37
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'vishalbhardwaj123') THEN 35
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'kumar_vishal_01') THEN 43
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'its_vivek_001') THEN 20
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'vivek_75') THEN 46
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'yuvrajsinghbhati01') THEN 66
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'namandamami') THEN 51
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Ajayjatav') THEN 73
+    WHEN student_id = (SELECT id FROM students WHERE leetcode_username = 'Kuldeep_Saraswat') THEN 23
+    ELSE total_score
+  END,
+  updated_at = NOW()
+WHERE student_id IN (
+  SELECT id FROM students WHERE leetcode_username IN (
+    'aadi2532', 'Abhishek_2008', 'Aadi_Singh_28', 'Ajit_Yadav_2908', 'Akanksha_kushwaha_a',
+    'alok-work23', 'aman1640', 'amanadarsh1168', 'Amit_Kumar13', 'tanamika', 'of0DUuvBjV',
+    'Anoop_kumar123', 'CodebyAnshu03', 'anuradha_24', 'Anushri_Mishra', 'aradhya789',
+    'arjunkadampatil', 'Uny60jPJeO', 'Arun_404', 'aryan8773', 'ashwin-tech', 'Ayush4Sony',
+    'Ayush_Yadav_029', 'Bhagwati323', 'bhaskarmahato03', 'Mr_bpk_4433', 'TrivedhChalla',
+    'WelcomeGseries', 'Chiranjeet_Biswas', 'debangsumisra', 'AlgoMandal', 'Dilip_Vaishnav_07',
+    'Dilip0552', 'Disha-01-alt', 'ADHIINSVY13', 'Divyanshirathour', 'EktaSaw1212',
+    'Gaurav_rathore96', 'gaurav_vvv', 'gauravtiwari_70', 'Guman_singh_rajpoot', 'HarisinghRaj',
+    'harshchourasiya295', 'thisharshit', 'ansraaz86', 'himanshu_chundawat', 'hirak__',
+    'hiranya_patil', 'Ishant_57', 'jagriti_Pandey01', 'kKJ7y7Q9Ks', 'Janu_Chaudhary',
+    'krtechie', 'khushi_narwariya', 'Lakhan_rathore', 'Maneesh_Sakhwar', 'MANIKUMAR7109',
+    'Chhaba_Manish', 'manojk909', 'Manoj_Dewda022', 'Mausam-kumari', 'mayankRajRay',
+    'alamehtab', 'Afzl_Raza', 'codemon-07', 'sharma_Mohit_2005', 'JoelMoirangthem',
+    'Monurajpoot', 'Arunkumar087', 'Neeru888', 'Nid_Singh', 'Rdxnikhil', 'Nikhil_KM_04',
+    'r2GUlBuyLZ', 'nirmal_M01', 'om_codes1', 'pawankushwah', 'ranapink398', 'pooransingh01',
+    'Prabhat7987', 'prachiDhakad', 'Chauhan_Pragati', 'Pranjal428', 'prem2450', 'PCodex9',
+    'preranarajnag', 'Priya_saini2004', 'iPriyadarshi', 'Pushpraj_DSA', 'rahu48',
+    'RahulVermaji', 'kn1gh7t', 'rajiv1478', 'RakshitaKBiradar', 'Ramrajnagar', 'DL6FbStsPL',
+    'MouryaRavi', 'RAVI-RAJPUT-UMATH', 'RITESH12JHA24', 'Ritik_Singh_2311', 'RohitMelasiya',
+    'rkprasad90600', 'Sajan_kumar45', 'Samina_Sultana', 'sandeepsinu79', 'Sandhya_Kaushal',
+    'Sandhya_Parmar', 'sarthak-26', 'kr_satish', 'bocchi_277', 'shahidthisside',
+    'Shalini_Priya29', 'shilpishaw', 'itz_shuklajii', 'shivamm-shukla', 'Shivangdubey9',
+    'shlokg62', 'shreyank_s', 'Shubham_Kang', 'Sneha6289', 'sunny_kumar_1', 'Surveer686',
+    'yadavsuyash723', 'Ujjwal_Baijal', 'sai_maithri', 'Vinay_Prajapati', 'Tamnnaparvreen',
+    'vinay_gupta01', 'vishalbhardwaj123', 'kumar_vishal_01', 'its_vivek_001', 'vivek_75',
+    'yuvrajsinghbhati01', 'namandamami', 'Ajayjatav', 'Kuldeep_Saraswat'
+  )
+);
