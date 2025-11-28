@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LeetCode Student Progress Tracker
 
 A comprehensive full-stack web application for tracking and analyzing LeetCode progress of students in a batch. The system provides real-time synchronization with LeetCode's API, comprehensive dashboards, and advanced analytics.
@@ -302,3 +303,7 @@ For issues and questions:
 ---
 
 **Built with ❤️ for tracking LeetCode progress and promoting competitive programming excellence.**
+=======
+# Leetcode_Tracker
+Lightweight tracker to record, visualize and analyze solving progress on LeetCode
+>>>>>>> 6fb846a03202487d785d3684357a3f1850d92cf8
